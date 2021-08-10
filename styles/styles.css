@@ -1,0 +1,147 @@
+body{
+    background-color: #d3f4fb;
+    
+}
+
+body main {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
+    
+}
+
+.topnav {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: #05445E;
+    overflow: hidden;
+    position: sticky;
+    top: 1.5%;
+    opacity: 0.98;
+  
+    z-index: 999;
+    
+}
+
+.topnav a {
+    /* float: right ; */
+    color: #189ab4;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.topnav a:hover {
+    background-color: #59d7ee;
+    color: #d3f4fb;
+}
+
+.topnav a.active {
+    background-color: #75E6DA;
+    color: white;
+}
+
+.topnav img {
+    justify-content: baseline;
+    margin-right: 15%;
+    height: 50px;
+    padding: 2px;
+    border-style: dashed;
+    border-color: #59d7ee;
+    border-radius: 10px;
+}
+/* The dropdown container */
+.dropdown {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Dropdown button */
+.dropdown .dropbtn {
+    
+    border: none;
+    outline: none;
+    color: #189AB4;
+    padding: 14px 16px;
+    background-color: inherit;
+    
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #59d7ee;
+  }
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #75E6DA;
+    min-width: 160px;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 998;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    
+    display: block;
+    text-align: left;
+  }
+  
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #05445E;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+@media screen and (max-width: 570px) {
+    
+    .topnav {
+      display: flex;
+      align-items: unset;
+      flex-direction: column;
+      align-items: initial;
+      position: static;
+    
+    
+    }
+
+    .dropdown {
+        display: flex;
+        align-items: unset;
+        flex-direction: column;
+        align-items: initial;
+        position: static;
+        
+        
+            
+    }
+    
+      
+    
+    .topnav img{
+        
+        
+        width: 45%;
+        
+    }
+}
